@@ -1,0 +1,239 @@
+/*GENERAL*/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #E6E6FA !important;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto;
+    background-color: #cfd5d4;
+    color: #343a40;
+    padding: 10px 0;
+}
+
+/*MAIN PAGE*/
+.efectos-card {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.efectos-textos {
+    animation: fadeInText 2s ease-out forwards;
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.imagen {
+    display: block;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.efectos-card {
+    border: 3px solid transparent; /* Base para el efecto */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para hover */
+    border-radius: 15px;
+}
+
+.efectos-card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño del div en un 5% */
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+.imagen:hover {
+    transform: scale(1.05); /* Aumenta el tamaño del div en un 5% */
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+/*ACHIEVEMENTS*/
+.section-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+.row .col-md-4 {
+    display: flex;
+}
+.card-title {
+    color: #ff7e5f;
+    font-weight: bold;
+}
+
+.efecto-card-hover:hover {
+    transform: scale(1.05); /* Aumenta el tamaño del div en un 5% */
+}
+
+/* Contenedor de las tarjetas */
+#curiosidades {
+    padding: 2rem;
+    text-align: center;
+}
+
+#curiosidades .curiosidades-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+/* Tarjetas individuales */
+.curiosidad-card {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px); /* Animación de entrada */
+}
+
+.curiosidad-card .card-body {
+    padding: 1rem;
+}
+
+/* Animación cuando se muestran las tarjetas */
+.curiosidad-card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.curiosidad-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/*SLIDER*/
+.swiper-card {
+    width: 100%;
+    max-width: 1600px;
+}
+
+.swiper-card .swiper-slide {
+    width: 250px;
+}
+
+.swiper-card img {
+    height: 255px;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 1024px) {
+    .swiper-card img {
+        height: 344px;
+    }
+}
+
+.swiper-card .swiper-button-prev,
+.swiper-card .swiper-button-next {
+    --swiper-navigation-size: 20px;
+    background-color: white;
+    height: 70px;
+    width: 50px;
+    margin-top: -35px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.swiper-card .swiper-button-prev {
+    border-radius: 0 65px 65px 0;
+    left: -10px;
+}
+.swiper-card .swiper-button-next {
+    border-radius: 65px 0 0 65px;
+    right: -10px;
+}
+
+/*Para que se vean los botones*/
+.swiper-card:hover .swiper-button-prev,
+.swiper-card:hover .swiper-button-next {
+    opacity: 1;
+}
+
+/*Paginación de color blanco*/
+.swiper-card .swiper-pagination {
+    --swiper-pagination-color: white;
+}
+
+/*contacto*/
+main h2 {
+    color: #333;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form .form-label {
+    font-weight: bold;
+    color: #555;
+}
+
+form .btn {
+    background-color: darkgray;
+}
+
+form .btn:hover {
+    background-color: gray;
+}
+
+#formRespuesta {
+    font-size: 1em;
+    font-weight: bold;
+    color: #28a745;
+    border: 1px solid #d4edda;
+    background-color: #d4edda;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

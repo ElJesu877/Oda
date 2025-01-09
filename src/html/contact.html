@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eiichiro Oda</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+</head>
+
+<body class="row-gap-5">
+<nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+        <h1 class="navbar-brand" href="#">Eiichirō Oda</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/biography.html">Biografia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/achievements.html">Logros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/slider.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="../html/contact.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/game.html">Aprende aqui!</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container mt-5">
+    <h2 class="text-center mb-4">Deja tu Pregunta, Comentario o Sugerencia</h2>
+    <form id="contactForm">
+        <div class="mb-3">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="name" placeholder="Escribe tu nombre" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Correo Electrónico</label>
+            <input type="email" class="form-control" id="email" placeholder="Escribe tu correo electrónico" required>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Escribe tu pregunta, comentario o sugerencia" required></textarea>
+        </div>
+        <button type="submit" class="btn ">Enviar</button>
+    </form>
+
+    <div id="formRespuesta" class="mt-4" style="display: none;">
+        <p class="alert alert-success">Gracias por tu mensaje. Lo hemos recibido correctamente.</p>
+    </div>
+</main>
+
+<footer class="text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Información</h5>
+                <p>
+                    Aquí puedes observar los principales datos sobre este autor tan conocido en el sector de la animación
+                </p>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Redes Sociales</h5>
+                <p>
+                    Puedes seguirnos en instagram, facebook, youtube donde os mantendremos informados sobre la información y actualidad de más autores
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="text-center p-3 ">
+        © 2024 Copyright:
+        <p>¡Aprende sobre tus autores favoritos!</p>
+    </div>
+</footer>
+<script src="../js/contact.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+</html>

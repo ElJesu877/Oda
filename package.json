@@ -1,0 +1,23 @@
+{
+  "name": "plantilla",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "dev": "parcel --open",
+    "build": "parcel build",
+    "start": "parcel src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.13.2",
+    "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "swiper": "^11.2.0",
+    "timelinejs": "^2.35.6"
+  }
+}
